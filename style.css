@@ -261,7 +261,7 @@
 @media (max-width: 480px) {
   .envelope-wrapper {
     width: 90%;
-    max-width: 00px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -302,6 +302,15 @@
     text-align: center;
   }
 
+  .toggle-player {
+    display: none;
+  }
+
+  .w-full {
+    display: none;
+  }
+}
+@media (max-width: 740px) {
   .toggle-player {
     display: none;
   }
