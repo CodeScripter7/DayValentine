@@ -80,7 +80,7 @@ let trackList = [
   {
     name: "y es que sucede asi",
     artist: "Arena hash",
-    path: "./music/Y es que sucede así",
+    path: "./music/Y es que sucede así.mp3",
   },
   {
     name: "Me estoy enamorando",

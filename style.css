@@ -130,7 +130,7 @@
   z-index: 0;
 }
 .flap > .envelope > .letter {
-  bottom: 140px;
+  bottom: 175px;
   transform: scale(1.5);
   transition-delay: 1s;
 }
@@ -257,4 +257,56 @@
 .next-track:hover {
   background-color: rgb(190, 190, 190);
   transition-duration: 0.5s;
+}
+@media (max-width: 480px) {
+  .envelope-wrapper {
+    width: 90%;
+    max-width: 00px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .envelope {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .envelope .letter {
+    height: auto;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .heart {
+    display: none;
+  }
+
+  .music-container {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 330px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .toggle-player {
+    display: none;
+  }
+
+  .w-full {
+    display: none;
+  }
 }
