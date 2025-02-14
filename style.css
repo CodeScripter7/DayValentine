@@ -78,6 +78,9 @@
   border-bottom: 100px solid var(--envelope-cover);
   border-left: 250px solid var(--envelope-cover);
 }
+.envelope.open .letter {
+  transform: translateY(50px); /* Controla cuánto sube */
+}
 .envelope > .letter {
   position: absolute;
   right: 20%;
@@ -130,7 +133,7 @@
   z-index: 0;
 }
 .flap > .envelope > .letter {
-  bottom: 175px;
+  bottom: 130px;
   transform: scale(1.5);
   transition-delay: 1s;
 }
@@ -261,6 +264,7 @@
 @media (max-width: 480px) {
   .envelope-wrapper {
     width: 90%;
+    margin: 20px auto;
     max-width: 200px;
     display: flex;
     flex-direction: column;
@@ -287,21 +291,6 @@
   .heart {
     display: none;
   }
-
-  .music-container {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 330px;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 15px;
-    text-align: center;
-  }
-
   .toggle-player {
     display: none;
   }
@@ -310,7 +299,7 @@
     display: none;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 790px) {
   .toggle-player {
     display: none;
   }
